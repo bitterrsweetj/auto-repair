@@ -7,12 +7,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./css/star-rating-svg.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <title>FinSweet</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>FinSweet Auto Repair</title>
 </head>
 
-<body class="page">
-
+<body>
+  <header class="header">
+    <a href="/" class="header__logo logo">
+      <img src="./images/logo.svg" alt="">
+    </a>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Home</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">About us</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Services</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Blog</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="contact-box">
+      <div class="contact-box__icon">
+        <img src="./images/icons/call-icon.svg" alt="">
+      </div>
+      <div class="contact-box__info">
+        <div class="contact-box__caption">Road Assistance</div>
+        <a class="contact-box__link" href="tel:18002652452">1800 265 24 52</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="my-rating" data-rating="2.5"></div>
+  </main>
 </body>
+<footer class="footer footer__page"></footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="./js/jquery.star-rating.js"></script>
+<script src="./js/app.js"></script>
+
 
 </html>

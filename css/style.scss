@@ -1,26 +1,36 @@
-/* Color styles */
---secondary: #661CE7;
---primary: #FF6433;
---mint: #00D289;
---black: #1E1B1B;
---grey: #939191;
---light--grey: #F2F2F2;
---steelgrey: #E2E6E9;
---white: #FFFFFF;
+// /* Color styles */
+// --secondary: #661CE7;
+// --primary: #FF6433;
+// --mint: #00D289;
+$--black: #1E1B1B;
+// --grey: #939191;
+// --light--grey: #F2F2F2;
+// --steelgrey: #E2E6E9;
+$--white: #FFFFFF;
 
-/* Text-size styles */  
---heading-h1: 4rem;
---heading-h2: 3.62rem;
---headingh3: 3rem;
---heading--h4: 2.5rem;
---title-01: 2rem;
---title-02: 1.5rem;
---body-01: 1.12rem;
---body-02: 1rem;
---caption: 1rem;
---heading-6: 1.25rem;
---heading-5: 2rem;
+// /* Text-size styles */  
+// --heading-h1: 4rem;
+// --heading-h2: 3.62rem;
+// --headingh3: 3rem;
+// --heading--h4: 2.5rem;
+// --title-01: 2rem;
+// --title-02: 1.5rem;
+// --body-01: 1.12rem;
+// --body-02: 1rem;
+// --caption: 1rem;
+// --heading-6: 1.25rem;
+// --heading-5: 2rem;
 
-/* Effect styles */
---g:  0px 28px 118px rgba(109, 108, 115, 0.08);
---d-e:  11px 130px 100px rgba(0, 0, 0, 0.02);
+// /* Effect styles */
+// --g:  0px 28px 118px rgba(109, 108, 115, 0.08);
+// --d-e:  11px 130px 100px rgba(0, 0, 0, 0.02);
+
+html {
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 600px;
+  line-height: 175%;
+  color: $--black;
+  background-color: $--white;
+}
+
