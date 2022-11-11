@@ -1,7 +1,21 @@
 html {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
-  font-weight: 600px;
+  font-weight: 600;
   line-height: 175%;
   color: #1E1B1B;
+  background-color: #FFFFFF;
+}
+
+.header {
+  height: 80 vh;
+}
+.header__top {
+  height: 90px;
+}
+.header__img {
+  width: 605px;
+  height: 632px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */

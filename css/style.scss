@@ -28,9 +28,93 @@ $--white: #FFFFFF;
 html {
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
-  font-weight: 600px;
+  font-weight: 600;
   line-height: 175%;
   color: $--black;
   background-color: $--white;
 }
 
+.header {
+  height: 80 vh;
+  &__top {
+    height: 90px;
+  }
+  &__logo {}
+
+  &__nav {}
+
+  &__nav-list {}
+
+  &__nav-item {}
+
+  &__nav-link {}
+
+  &__body {}
+
+  &__body-inner {}
+
+  &__content {}
+
+  &__title {}
+
+  &__btn-box {}
+
+  &__main-btn {}
+
+  &__play-btn {}
+
+  &__schedule {}
+
+  &__schedule-subtitle {}
+
+  &__schedule-title {}
+
+  &__img {
+    width: 605px;
+    height: 632px;
+    object-fit: cover;
+  }
+
+  &__service {}
+
+  &__service-icon {}
+
+  &__service-text {}
+
+  &__rating {}
+
+  &__rating-caption {}
+
+  &__rating-stars {}
+}
+
+.logo {}
+
+.contact-box {
+
+  &_icon {}
+
+  &__info {}
+
+  &__caption {}
+
+  &__link {}
+}
+
+.container {}
+
+.title {}
+
+.button {}
+
+.caption {}
+
+.body-text {}
+
+.caption-nums {}
+
+.caption-text {}
+
+.body-text {
+
+}
