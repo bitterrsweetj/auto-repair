@@ -34,20 +34,51 @@ html {
   background-color: $--white;
 }
 
+
 .header {
-  height: 80 vh;
-  &__top {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+
+  &__top {}
+
+  &__top-inner {
     height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  &__logo {}
 
-  &__nav {}
+  &__logo {
+    height: 28px;
+    width: 122px;
+  }
 
-  &__nav-list {}
+  &__nav {
+    margin-left: auto;
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 40px;
+  }
 
   &__nav-item {}
 
   &__nav-link {}
+
+
+  &__contact-box {
+    margin-left: 118px;
+  }
+
+  &__info {}
+
+  &__caption {}
+
+  &__link {}
+
+  .icon-contact {}
 
   &__body {}
 
@@ -88,20 +119,23 @@ html {
   &__rating-stars {}
 }
 
+.container {
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
 .logo {}
 
+.icon-contact {}
+
 .contact-box {
-
-  &_icon {}
-
-  &__info {}
 
   &__caption {}
 
   &__link {}
 }
-
-.container {}
 
 .title {}
 
@@ -112,9 +146,3 @@ html {
 .body-text {}
 
 .caption-nums {}
-
-.caption-text {}
-
-.body-text {
-
-}
