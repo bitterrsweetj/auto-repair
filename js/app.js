@@ -1,5 +1,5 @@
-$(".my-rating").starRating({
-  starSize: 25,
+$(".header__rating-stars").starRating({
+  starSize: 36,
   initialRating: 4.5,
   readOnly: true,
   useGradient: false,

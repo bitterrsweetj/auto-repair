@@ -13,7 +13,7 @@ html {
   flex-direction: column;
 }
 .header__top-inner {
-  height: 90px;
+  padding: 18px 0 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,18 +29,222 @@ html {
   display: flex;
   gap: 40px;
 }
+.header__nav-link {
+  position: relative;
+}
+.header__nav-link::after {
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: #1E1B1B;
+  opacity: 0.6;
+  transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+  width: 0;
+}
+.header__nav-link:hover::after {
+  width: 100%;
+  opacity: 0.9;
+}
 .header__contact-box {
-  margin-left: 118px;
+  display: flex;
+  gap: 14px;
+  margin-left: 64px;
+}
+.header__contact-box::before {
+  content: "";
+  height: 42px;
+  width: 1px;
+  margin-right: 16px;
+  background-color: #939191;
+  opacity: 0.36;
+}
+.header__link {
+  line-height: 175%;
+}
+.header .icon-contact {
+  background-color: #61C3A1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.header__body-inner {
+  display: flex;
+  position: relative;
+  gap: 30px;
+  justify-content: space-between;
+}
+.header__content {
+  margin: auto 0;
+}
+.header__title {
+  max-width: 630px;
+  margin-bottom: 32px;
+}
+.header__btn-box {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+  margin-bottom: 48px;
+}
+.header__play-btn {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  font-weight: 700;
+  line-height: 1;
+  align-items: center;
+}
+.header__play-btn svg {
+  transition: 0.3s;
+  border-radius: 50%;
+}
+.header__play-btn:hover svg {
+  box-shadow: 0 0 0 8px rgba(49, 49, 49, 0.12);
+}
+.header__schedule {
+  position: relative;
+  padding-left: 45px;
+}
+.header__schedule::before {
+  content: "";
+  left: 1px;
+  top: 12px;
+  position: absolute;
+  background: url("../images/icons/clock-icon.svg") no-repeat;
+  width: 31px;
+  height: 31px;
 }
 .header__img {
   width: 605px;
   height: 632px;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -1;
+}
+.header__service {
+  position: absolute;
+  top: 80px;
+  right: 330px;
+  border-radius: 60px;
+  box-shadow: 0px 28px 118px rgba(109, 108, 115, 0.12);
+  background: linear-gradient(138.85deg, #FFFFFF -38.72%, #FFFFFF 153.95%);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 15px 38px 17px 14px;
+}
+.header__service::before {
+  position: absolute;
+  content: "";
+  width: 304px;
+  height: 126px;
+  top: -12px;
+  left: -12px;
+  z-index: -1;
+  border-radius: 66px;
+  background-color: rgb(225, 225, 225);
+  opacity: 0.43;
+}
+.header__service-icon {
+  line-height: 175%;
+  display: flex;
+  gap: 3px;
+  padding: 17px 9px 17px 13px;
+  align-items: baseline;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #5CBA99;
+  color: #FFFFFF;
+}
+.header__rating {
+  position: absolute;
+  bottom: 70px;
+  right: -20px;
+  border-radius: 60px;
+  box-shadow: 0px 28px 118px rgba(109, 108, 115, 0.12);
+  background: linear-gradient(138.85deg, #FFFFFF -38.72%, #FFFFFF 153.95%);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 24px 32px 24px 39px;
+}
+.header__rating::before {
+  position: absolute;
+  content: "";
+  width: 346px;
+  height: 126px;
+  top: -12px;
+  left: -12px;
+  z-index: -1;
+  border-radius: 66px;
+  background-color: rgb(225, 225, 225);
+  opacity: 0.43;
+}
+.header__rating-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__rating-caption .caption-nums {
+  color: #1E1B1B;
+  margin-bottom: -5px;
 }
 .container {
   max-width: 1250px;
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
+}
+
+.title_size_l {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 130%;
+  letter-spacing: -0.03em;
+}
+
+.title_size_m {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 175%;
+  color: #FFFFFF;
+  padding: 16px 40px;
+  background-color: #FF6433;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+.button:hover {
+  transform: scale(1.05);
+}
+
+.caption {
+  font-weight: 500;
+  line-height: 150%;
+  color: #616060;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 175%;
+}
+
+.caption-nums {
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
