@@ -672,25 +672,25 @@ html {
 
   &__filter-btn {
     background-color: $--white;
-    // position: relative;
-// 
-//     &::after {
-//       bottom: -4px;
-//       content: "";
-//       display: block;
-//       height: 2px;
-//       left: 0;
-//       position: absolute;
-//       background: $--black;
-//       opacity: 0.6;
-//       transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
-//       width: 0;
-//     }
-// 
-//     &:hover::after {
-//       width: 100%;
-//       opacity: .9;
-//     }
+    position: relative;
+
+    &::after {
+      bottom: -4px;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 0;
+      position: absolute;
+      background: $--black;
+      opacity: 0.6;
+      transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+      width: 0;
+    }
+
+    &:hover::after {
+      width: 100%;
+      opacity: .9;
+    }
   }
 
   &__list {
@@ -702,14 +702,16 @@ html {
   &__item {
     max-width: 405px;
     flex: 1 1 33.333%;
-    // transition: all .3s ease-in-out;
-    // &:hover {
-    // transform: translateY(-5px);
-    // box-shadow: 0px 28px 118px rgba(109, 108, 115, 0.1);
-    // }
   }
 
-  &__item-link {}
+  &__item-link {
+    display: block;
+    transition: all .3s ease-in-out;
+    &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 28px 118px rgba(109, 108, 115, 0.1);
+    }
+  }
 
   &__item-inner {
     display: flex;
@@ -739,3 +741,6 @@ html {
     line-height: 28px;
   }
 }
+// ---------------------------------------------------------------
+// ---------------------------------------------------------------
+// CUSTOMERS

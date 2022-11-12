@@ -486,6 +486,23 @@ html {
 }
 .blog__filter-btn {
   background-color: #FFFFFF;
+  position: relative;
+}
+.blog__filter-btn::after {
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: #1E1B1B;
+  opacity: 0.6;
+  transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+  width: 0;
+}
+.blog__filter-btn:hover::after {
+  width: 100%;
+  opacity: 0.9;
 }
 .blog__list {
   display: flex;
@@ -495,6 +512,14 @@ html {
 .blog__item {
   max-width: 405px;
   flex: 1 1 33.333%;
+}
+.blog__item-link {
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.blog__item-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 28px 118px rgba(109, 108, 115, 0.1);
 }
 .blog__item-inner {
   display: flex;
