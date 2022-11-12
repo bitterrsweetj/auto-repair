@@ -39,8 +39,7 @@ html {
 }
 
 .container {
-  max-width: 1250px;
-  padding: 0 15px;
+  max-width: 1280px;
   margin: 0 auto;
   height: 100%;
 }
@@ -94,7 +93,7 @@ html {
 .title-1 {
   font-weight: 700;
   font-size: 32px;
-  line-height: 48px;
+  line-height: 150%;
   letter-spacing: -0.03em;
 }
 
@@ -330,7 +329,7 @@ html {
       left: -12px;
       z-index: -1;
       border-radius: 66px;
-      background-color: rgba(225, 225, 225);
+      background-color: $--white;
       opacity: .43;
     }
   }
@@ -372,7 +371,7 @@ html {
       left: -12px;
       z-index: -1;
       border-radius: 66px;
-      background-color: rgba(225, 225, 225);
+      background-color: $--white;
       opacity: .43;
     }
   }
@@ -631,7 +630,8 @@ html {
 
   &__grid-item {
     opacity: .8;
-    &:hover{
+
+    &:hover {
       opacity: 1;
     }
   }
@@ -644,3 +644,98 @@ html {
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
 // BLOG
+.main {
+
+  &__blog {
+    padding-top: 130px;
+  }
+}
+
+.blog {
+
+  &__inner {}
+
+  &__heading {
+    margin-bottom: 47px;
+  }
+
+  &__body {}
+
+  &__btn-box {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 46px;
+  }
+
+  &__filter-item {
+  }
+
+  &__filter-btn {
+    background-color: $--white;
+    // position: relative;
+// 
+//     &::after {
+//       bottom: -4px;
+//       content: "";
+//       display: block;
+//       height: 2px;
+//       left: 0;
+//       position: absolute;
+//       background: $--black;
+//       opacity: 0.6;
+//       transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+//       width: 0;
+//     }
+// 
+//     &:hover::after {
+//       width: 100%;
+//       opacity: .9;
+//     }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 32px;
+  }
+
+  &__item {
+    max-width: 405px;
+    flex: 1 1 33.333%;
+    // transition: all .3s ease-in-out;
+    // &:hover {
+    // transform: translateY(-5px);
+    // box-shadow: 0px 28px 118px rgba(109, 108, 115, 0.1);
+    // }
+  }
+
+  &__item-link {}
+
+  &__item-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__image-box {
+    margin-bottom: 8px;
+  }
+
+  &__image-box img {
+    max-width: 405px;
+  }
+
+  &__item-content {}
+
+  &__item-info {
+    line-height: 175%;
+    color: #939191;
+    margin-bottom: 16px;
+  }
+
+  &__item-heading {}
+
+  &__item-text {
+    line-height: 28px;
+  }
+}

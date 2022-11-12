@@ -8,3 +8,11 @@ $(".header__rating-stars").starRating({
   activeColor: '#FFB648'
 
 });
+
+var mixer = mixitup('.blog__list');
+
+$(document).on('click', '.blog__filter-btn', function () {
+  $('.blog__filter-btn').removeClass('blog__filter-btn--active')
+  $(this).addClass('blog__filter-btn--active');
+
+})
