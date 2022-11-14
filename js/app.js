@@ -20,5 +20,18 @@ $(document).on('click', '.blog__filter-btn', function () {
 $('.customers__slider').slick({
   infinite: false,
   slidesToShow: 2,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  dots: true,
+  arrows:false,
+  waitForAnimate: false,
+  appendDots: $(".customers__dots")
 });
+
+$('.customers__slider-prev').on('click', function (e) {
+  e.preventDefault()
+  $('.customers__slider').slick('slickPrev')
+})
+$('.customers__slider-next').on('click', function (e) {
+  e.preventDefault()
+  $('.customers__slider').slick('slickNext')
+})

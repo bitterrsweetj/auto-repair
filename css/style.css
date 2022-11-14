@@ -552,23 +552,29 @@ html {
   margin: 0 auto;
   max-width: 900px;
 }
+.customers__slider-wrapper {
+  position: relative;
+}
 .customers__slider {
   margin-top: 76px;
 }
+.customers__slider .slick-list {
+  margin: 0 -23px;
+}
+.customers__slide-wrapper {
+  padding: 0 24px;
+}
 .customers__slide {
   background-color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
   padding: 72px;
   border: 1px solid rgba(172, 172, 172, 0.29);
-  box-shadow: 11px 130px 100px 30px rgba(0, 0, 0, 0.02);
   border-radius: 6px;
   max-width: 616px;
-  gap: 24px;
 }
 .customers__user {
   display: flex;
   gap: 16px;
+  margin-bottom: 24px;
 }
 .customers__avatar img {
   width: 64px;
@@ -577,4 +583,58 @@ html {
 }
 .customers__info-city {
   color: #939191;
+}
+.customers__dots .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 17px;
+  gap: 15px;
+}
+.customers__dots button {
+  font-size: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.customers__dots button::before {
+  content: "";
+  width: 32px;
+  height: 4px;
+  background-color: #939191;
+  transition: all 0.3s;
+}
+.customers__dots .slick-active button::before {
+  background-color: #FF6433;
+}
+.customers__arrows {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  bottom: -23px;
+  z-index: 100;
+  gap: 24px;
+}
+.customers__arrows-item {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  transition: all 0.3s;
+}
+.customers__arrows-item svg path {
+  transition: all 0.3s;
+}
+.customers__arrows-item:hover {
+  transform: scale(1.3);
+  transition: all 0.3s;
+  background-color: #1E1B1B;
+}
+.customers__arrows-item:hover svg path {
+  fill: #FFFFFF;
+  transition: all 0.3s;
 }/*# sourceMappingURL=style.css.map */
