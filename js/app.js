@@ -16,3 +16,9 @@ $(document).on('click', '.blog__filter-btn', function () {
   $(this).addClass('blog__filter-btn--active');
 
 })
+
+$('.customers__slider').slick({
+  infinite: false,
+  slidesToShow: 2,
+  slidesToScroll: 1
+});
