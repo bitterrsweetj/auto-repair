@@ -8,9 +8,10 @@ html {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1310px;
   margin: 0 auto;
   height: 100%;
+  padding: 0 15px;
 }
 
 .heading-h1 {
@@ -226,7 +227,7 @@ html {
 .header__service {
   position: absolute;
   top: 80px;
-  right: 330px;
+  right: 355px;
   border-radius: 60px;
   box-shadow: 0px 28px 118px rgba(109, 108, 115, 0.12);
   background: linear-gradient(138.85deg, #FFFFFF -38.72%, #FFFFFF 153.95%);
