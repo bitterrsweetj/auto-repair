@@ -613,7 +613,6 @@ html {
   position: absolute;
   right: 10px;
   bottom: -23px;
-  z-index: 100;
   gap: 24px;
 }
 .customers__arrows-item {
@@ -637,4 +636,111 @@ html {
 .customers__arrows-item:hover svg path {
   fill: #FFFFFF;
   transition: all 0.3s;
+}
+
+.main__contacts {
+  padding: 121px 0 178px;
+}
+
+.contacts__heading {
+  max-width: 500px;
+  margin-bottom: 48px;
+}
+.contacts__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contacts__form-label {
+  color: #1E1B1B;
+}
+.contacts__form-label select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.contacts__form-input {
+  resize: none;
+  width: 624px;
+  padding: 23px 40px;
+  background-color: #F2F2F2;
+}
+.contacts__form-input::-moz-placeholder {
+  color: #1E1B1B;
+}
+.contacts__form-input:-ms-input-placeholder {
+  color: #1E1B1B;
+}
+.contacts__form-input::placeholder {
+  color: #1E1B1B;
+}
+.contacts__form-btn {
+  margin-top: 48px;
+  margin-right: auto;
+}
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.contacts__info-caption {
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+.map__content {
+  width: 1280px;
+  filter: grayscale(1);
+}
+.map__bg {
+  margin-top: -168px;
+}
+
+.footer__top {
+  background-color: #222020;
+  color: #FFFFFF;
+  padding: 128px 0;
+}
+.footer__top-inner {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.footer__content {
+  max-width: 463px;
+}
+.footer__socials {
+  margin-top: 64px;
+  display: flex;
+  gap: 24px;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer__contacts-caption {
+  opacity: 0.6;
+  margin-bottom: 8px;
+}
+.footer__bottom {
+  background-color: #1E1B1B;
+  color: #FFFFFF;
+}
+.footer__bottom-inner {
+  padding: 65px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__nav-list {
+  display: flex;
+  gap: 36px;
+}
+.footer__copyright {
+  color: #939191;
 }/*# sourceMappingURL=style.css.map */
