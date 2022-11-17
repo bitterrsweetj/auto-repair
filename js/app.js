@@ -35,3 +35,12 @@ $('.customers__slider-next').on('click', function (e) {
   e.preventDefault()
   $('.customers__slider').slick('slickNext')
 })
+
+
+// accordion function
+
+$('.questions__accordion-link').on('click', function (e) {
+    e.preventDefault()
+    $(this).toggleClass('questions__accordion-item--active')
+    $(this).children('.questions__accordion-text').slideToggle()
+  })

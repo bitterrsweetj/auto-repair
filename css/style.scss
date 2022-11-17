@@ -29,7 +29,7 @@ $--white: #FFFFFF;
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
 // GLOBAL 
-html {
+body {
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -882,6 +882,78 @@ html {
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
 // FAQ
+.main {
+
+  &__questions {
+    padding: 128px 0;
+    background-color: $--steelgrey;
+  }
+}
+
+.questions {
+
+  &__inner {}
+
+  &__heading {
+    margin-bottom: 86px;
+    text-align: center;
+  }
+
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__accordion-item {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+    background-color: $--white;
+  }
+
+  &__accordion-link {
+    position: relative;
+  }
+
+  &__accordion-label {
+  }
+  &__accordion-content {}
+
+  &__accordion-text {
+    margin-top: 16px;
+    display: none;
+    color: #939191;
+    max-width: 700px;
+  }
+  &__accordion-toggle {
+    position: relative;
+    position: absolute;
+    top: -8px;
+    right: 0px;
+    width: 51px;
+    height: 51px;
+    background-color: $--primary;
+    &::before, &::after {
+      position: absolute;
+      content: '';
+      top: 25px;
+      right: 17px;
+      width: 17px;
+      height: 2px;
+      background-color: $--white;
+      border-radius: 2px;
+    }
+    &::before {
+      transform: rotate(90deg);
+      transition: all .3s ease-in-out;
+    }
+    .questions__accordion-item--active &::before {
+      transform: rotate(0deg);
+    }
+  }
+}
 
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
@@ -969,14 +1041,22 @@ html {
 
 .map {
   &__content {
-    width: 1280px;
+    height: 512px;
+    max-width: 1280px;
+    width: 100%;
     filter: grayscale(1);
   }
 
   &__bg {
     margin-top: -168px;
+
+    & img {
+      width: 100%;
+    }
   }
+
 }
+
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
 // FOOTER
