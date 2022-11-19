@@ -211,7 +211,7 @@ body {
   margin: auto 0;
 }
 .header__title {
-  max-width: 630px;
+  width: 630px;
   margin-bottom: 32px;
 }
 .header__btn-box {
