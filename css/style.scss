@@ -651,10 +651,12 @@ body {
   }
 
   &__grid-item {
-    opacity: .8;
+    opacity: .6;
+    transition: all .3s ease-in-out;
 
     &:hover {
       opacity: 1;
+      transition: all .3s ease-in-out;
     }
   }
 
