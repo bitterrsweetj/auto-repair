@@ -38,6 +38,12 @@ body {
   background-color: $--white;
 }
 
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 .container {
   max-width: 1310px;
   margin: 0 auto;
@@ -123,7 +129,6 @@ body {
   // color: $--white;
 }
 
-
 .button {
   font-size: 18px;
   line-height: 175%;
@@ -138,13 +143,48 @@ body {
   }
 }
 
-
-
 .main {
 
   &__services {
-    padding-top: 128px;
+    padding: 128px 0;
   }
+
+  &__process {
+    padding: 134px 0;
+  }
+
+  &__contact {
+    background: url("../images/contact-img-2.jpg") top right no-repeat, url("../images/contact-img-1.jpg") top left no-repeat;
+    background-size: 873px 502px;
+    padding-bottom: 48px;
+  }
+
+  &__brands {
+    padding: 128px 0 82px;
+    background-color: #E2E6E9;
+
+  }
+
+  &__blog {
+    padding: 130px 0 136px;
+  }
+
+  &__customers {
+    padding: 128px 0 150px;
+    background-color: $--light--grey;
+  }
+
+  &__questions {
+    padding: 128px 0;
+    background-color: $--steelgrey;
+  }
+
+  &__contacts {
+    padding: 121px 0 178px;
+  }
+
+  &__map {}
+
 }
 
 // ---------------------------------------------------------------
@@ -303,10 +343,13 @@ body {
   &__schedule-title {}
 
   &__img {
-    width: 605px;
-    height: 632px;
-    object-fit: cover;
     z-index: -1;
+
+    & img {
+      width: 605px;
+      height: 632px;
+      object-fit: cover;
+    }
   }
 
   &__service {
@@ -473,19 +516,12 @@ body {
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
 // PROCESS
-.main {
-
-  &__process {
-    padding: 128px 0 134px;
-  }
-}
 
 .process {
 
   &__inner {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    gap: 140px;
     margin: 0 auto;
   }
 
@@ -553,14 +589,6 @@ body {
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
 // CONTACT
-.main {
-
-  &__contact {
-    background: url("../images/contact-img-1.jpg") top left no-repeat, url("../images/contact-img-2.jpg") top right no-repeat;
-    background-size: 873px 502px;
-    padding-bottom: 48px;
-  }
-}
 
 .contact {
 
@@ -605,13 +633,6 @@ body {
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
 // BRANDS
-.main {
-
-  &__brands {
-    padding: 128px 0 82px;
-    background-color: #E2E6E9;
-  }
-}
 
 .brands {
 
@@ -645,12 +666,6 @@ body {
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
 // BLOG
-.main {
-
-  &__blog {
-    padding: 130px 0 136px;
-  }
-}
 
 .blog {
 
@@ -746,13 +761,6 @@ body {
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
 // CUSTOMERS
-.main {
-
-  &__customers {
-    padding: 128px 0 150px;
-    background-color: $--light--grey;
-  }
-}
 
 .customers {
 
@@ -773,11 +781,11 @@ body {
   }
 
   &__slider .slick-list {
-    margin: 0 -23px;
+    margin: 0 -12px;
   }
 
   &__slide-wrapper {
-    padding: 0 24px;
+    padding: 0 12px;
   }
 
   &__slide {
@@ -882,13 +890,6 @@ body {
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
 // FAQ
-.main {
-
-  &__questions {
-    padding: 128px 0;
-    background-color: $--steelgrey;
-  }
-}
 
 .questions {
 
@@ -917,8 +918,8 @@ body {
     position: relative;
   }
 
-  &__accordion-label {
-  }
+  &__accordion-label {}
+
   &__accordion-content {}
 
   &__accordion-text {
@@ -927,6 +928,7 @@ body {
     color: #939191;
     max-width: 700px;
   }
+
   &__accordion-toggle {
     position: relative;
     position: absolute;
@@ -935,7 +937,9 @@ body {
     width: 51px;
     height: 51px;
     background-color: $--primary;
-    &::before, &::after {
+
+    &::before,
+    &::after {
       position: absolute;
       content: '';
       top: 25px;
@@ -945,10 +949,12 @@ body {
       background-color: $--white;
       border-radius: 2px;
     }
+
     &::before {
       transform: rotate(90deg);
       transition: all .3s ease-in-out;
     }
+
     .questions__accordion-item--active &::before {
       transform: rotate(0deg);
     }
@@ -958,13 +964,6 @@ body {
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
 // CONTACTS
-.main {
-
-  &__contacts {
-    padding: 121px 0 178px;
-  }
-}
-
 .contacts {
 
   &__inner {}
@@ -1035,9 +1034,6 @@ body {
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
 // MAP
-.main {
-  &__map {}
-}
 
 .map {
   &__content {
@@ -1051,6 +1047,8 @@ body {
     margin-top: -168px;
 
     & img {
+      height: 448px;
+      object-fit: cover;
       width: 100%;
     }
   }
@@ -1092,6 +1090,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    margin-right: 153px;
   }
 
   &__contacts-item {}
@@ -1120,6 +1119,7 @@ body {
   &__nav-list {
     display: flex;
     gap: 36px;
+    margin-left: 120px;
   }
 
   &__nav-item {}

@@ -44,3 +44,20 @@ $('.questions__accordion-link').on('click', function (e) {
     $(this).toggleClass('questions__accordion-item--active')
     $(this).children('.questions__accordion-text').slideToggle()
   })
+
+
+
+
+  //======================================
+// -----> CHECK OVERFLOW <--------- 
+//
+//   var docWidth = document.documentElement.offsetWidth;
+// 
+// [].forEach.call(
+//   document.querySelectorAll('*'),
+//   function(el) {
+//     if (el.offsetWidth > docWidth) {
+//       console.log(el);
+//     }
+//   }
+// );
