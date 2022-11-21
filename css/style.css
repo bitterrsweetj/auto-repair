@@ -406,7 +406,6 @@ body {
   max-width: 437px;
 }
 .process__list {
-  max-width: 432px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -437,7 +436,7 @@ body {
   opacity: 0.6;
   line-height: 175%;
   font-size: 18px;
-  max-width: 336px;
+  width: 300px;
 }
 
 .contact__cta {
@@ -876,6 +875,13 @@ body {
     margin-left: auto;
     margin-top: -150px;
     text-align: center;
+  }
+  .process__inner {
+    flex-direction: column;
+  }
+  .process__list {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 700px) {

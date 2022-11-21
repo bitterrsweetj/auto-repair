@@ -546,7 +546,6 @@ body {
   }
 
   &__list {
-    max-width: 432px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -555,6 +554,7 @@ body {
   &__list-item {
     display: flex;
     gap: 24px;
+    pb8px
   }
 
   &__list-left {
@@ -586,7 +586,7 @@ body {
     opacity: .6;
     line-height: 175%;
     font-size: 18px;
-    max-width: 336px;
+    width: 300px;
   }
 }
 
@@ -1238,6 +1238,15 @@ body {
     margin-left: auto;
     margin-top: -150px;
     text-align: center;
+  }
+
+  // -------------------------------------------------
+  .process__inner {
+    flex-direction: column;
+  }
+  .process__list {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
