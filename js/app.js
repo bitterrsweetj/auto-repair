@@ -26,7 +26,15 @@ $(function () {
     dots: true,
     arrows: false,
     waitForAnimate: false,
-    appendDots: $(".customers__dots")
+    appendDots: $(".customers__dots"),
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+    ]
   });
 
   $('.customers__slider-prev').on('click', function (e) {
