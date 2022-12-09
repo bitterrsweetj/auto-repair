@@ -156,7 +156,7 @@ body {
 
   &__contact {
     background: url("../images/contact-img-2.jpg") top right no-repeat, url("../images/contact-img-1.jpg") top left no-repeat;
-    background-size: 873px 502px;
+    
     padding-bottom: 48px;
   }
 
@@ -693,7 +693,8 @@ body {
 
   &__btn-box {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 10px 30px;
     margin-bottom: 46px;
   }
 
@@ -943,7 +944,7 @@ body {
     margin-top: 16px;
     display: none;
     color: #939191;
-    max-width: 700px;
+    margin-right: 60px;
   }
 
   &__accordion-toggle {
@@ -997,6 +998,7 @@ body {
 
   &__form {
     display: flex;
+    flex: 1 1 auto;
     flex-direction: column;
     gap: 4px;
   }
@@ -1011,7 +1013,7 @@ body {
 
   &__form-input {
     resize: none;
-    width: 624px;
+    width: 100%;
     padding: 23px 40px;
     background-color: $--light--grey;
     color: $--black;
@@ -1109,7 +1111,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin-right: 153px;
   }
 
   &__contacts-item {}
@@ -1129,8 +1130,10 @@ body {
   &__bottom-inner {
     padding: 65px 0;
     display: flex;
-    align-items: center;
+    row-gap: 20px;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-content: center;
   }
 
   &__logo {}
@@ -1138,7 +1141,7 @@ body {
   &__nav-list {
     display: flex;
     gap: 36px;
-    margin-left: 120px;
+    margin: 0 30px;
   }
 
   &__nav-item {}
@@ -1219,6 +1222,11 @@ body {
   // ------------------------------------------------------
   .customers__slide {
     padding: 40px;
+  }
+
+  //-----------------------------------------------------
+  .contacts__form {
+    width: auto;
   }
 
 }
@@ -1308,6 +1316,15 @@ body {
   .questions__accordion-label {
     font-size: 18px;
   }
+
+  //-----------------------------------
+  .map__bg {
+    margin-top: -300px;
+  }
+  // ----------------------------------
+  .footer__contacts-text{
+    font-size: 18px;
+  }
 }
 
 // ---------------------------------------------------------------
@@ -1363,6 +1380,39 @@ body {
   .questions__heading {
     margin-bottom: 40px;
   }
+
+  //--------------------------------------------------
+  .contacts__content {
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .contacts__info {
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  .contacts__info-text {
+    font-size: 20px;
+  }
+
+  // --------------------------
+  .footer__top-inner {
+    flex-direction: column;
+  }
+
+  //----------------------------
+  .footer__bottom-inner {
+    flex-direction: column;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .footer__nav-list {
+    margin: 0;
+  }
+  .footer__copyright {
+    font-size: 12px;
+    margin: 30px auto 0;
+  }
 }
 
 // ---------------------------------------------------------------
@@ -1409,7 +1459,10 @@ body {
     }
   }
   .questions__accordion-label {
-    max-width: 330px;
+    margin-right: 40px;
+  }
+  .questions__accordion-text {
+    margin-right: 0;
   }
 
 }
@@ -1439,7 +1492,18 @@ body {
   }
 
   // --------------------------------------------------
+  .contacts__form-btn {
+    margin-top: 25px;
+    width: 100%;
+  }
+// --------------------------------------------------
 
+
+  .footer__nav-list {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+  }
 }
 
 // ---------------------------------------------------------------
@@ -1449,5 +1513,12 @@ body {
 
   .services__list-link {
     height: 150px;
+  }
+  //------------------------------
+  .process__list-item {
+    gap: 10px;
+  }
+  .process__list-caption {
+    width: auto;
   }
 }
